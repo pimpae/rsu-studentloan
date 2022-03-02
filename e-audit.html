@@ -101,7 +101,7 @@
                     <nav class="mt-2">
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link active"> 
+                                <a href="index.html" class="nav-link "> 
                                     <i class="nav-icon far fa-file-excel"></i>
                                     <p>
                                         รายการนำเข้า Excel
@@ -110,7 +110,7 @@
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="e-audit.html" class="nav-link">
+                                <a href="e-audit.html" class="nav-link active">
                                     <i class="nav-icon far fa-file-excel"></i>
                                     <p> E-audit</p>
                                 </a> 
@@ -161,7 +161,7 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0">รายการนำเข้า Excel</h1>
+                                <h1 class="m-0"> E-audit </h1>
                             </div>  
                         </div> 
                     </div> 
@@ -188,22 +188,22 @@
                                     <div class="col-12 search-label">
                                         <div class="row">
                                             <div class="col-xl-2">
-                                                <label for="">วันที่นำเข้า </label>
+                                                <label for="">วันที่เอกสาร </label>
                                                 <input type="text" class="form-control"  >
                                             </div>  
                                             <div class="col-xl-2">
-                                                <label for="">สถานะในรายการ </label>
-                                                <select class="selectpicker" title="สถานะในรายการ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>มียอดเกิน</option>
-                                                    <option>ยอดพอดี</option> 
+                                                <label for="">คณะ </label>
+                                                <select class="selectpicker" title="คณะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>คณะ</option>
+                                                    <option>คณะ</option> 
                                                 </select>
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">ชื่อไฟล์ </label>
+                                                <label for="">ชื่อผู้กู้ </label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">เจ้าหน้าที่นำเข้า </label>
+                                                <label for="">เลขที่ใบเสร็จ </label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2"> 
@@ -221,78 +221,115 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>ID</th>
-                                                    <th>ไฟล์จาก กยศ</th> 
-                                                    <th>ไฟล์จาก สำนักงานการเงิน</th>
-                                                    <th>วันที่นำเข้า</th>
-                                                    <th>เจ้าหน้าที่นำเข้า</th> 
-                                                    <th>สถานะในรายการ</th> 
-                                                    <th>&nbsp;</th>
+                                                    <th>ชื่อผู้กู้</th>
+                                                    <th>นามสกุล</th> 
+                                                    <th>เลขที่ใบเสร็จ (ค่าเล่าเรียน)</th>
+                                                    <th>วันที่เอกสาร</th>
+                                                    <th>จำนวนค่าเล่าเรียน</th> 
+                                                    <th>เลขที่ใบแจ้งหนี้/เลขที่ใบเสร็จ</th> 
+                                                    <th>วันที่เอกสาร</th> 
+                                                    <th>จำนวนค่าใช้จ่าย</th> 
+                                                    <th>คณะ</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr> 
                                                     <td>1</td>
-                                                    <td>EXCEL-65083992</td>
-                                                    <td>
-                                                        SLF-65-05-02.excel
-                                                    </td> 
-                                                    <td> 
-                                                        RSU-SLF-65-05-02.excel
-                                                    </td>
-                                                    <td>
-                                                        10/01/2565
-                                                    </td>
-                                                    <td>นายอดิศร ศรีสุธรรม</td>
-                                                    <td><span class="text-success h5 text-bold">มียอดเกิน</span></td>     
-                                                    <td>
-                                                        <a href="excel-in-description.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
-                                                            รายละเอียด
-                                                        </a> 
-                                                    </td>
+                                                    <td>อดิศร</td>
+                                                    <td>ศรีสุธรรม </td> 
+                                                    <td>6248590</td>
+                                                    <td>10/01/2565 </td>
+                                                    <td>45000</td>
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td>วิทยาศาสตร์</td>
                                                 </tr>  
-                                                
                                                 <tr> 
                                                     <td>2</td>
-                                                    <td>EXCEL-65083992</td>
-                                                    <td>
-                                                        SLF-65-05-02.excel
-                                                    </td> 
-                                                    <td> 
-                                                        RSU-SLF-65-05-02.excel
-                                                    </td>
-                                                    <td>
-                                                        10/01/2565
-                                                    </td>
-                                                    <td>นายอดิศร ศรีสุธรรม</td>
-                                                    <td><span class="text-dark h5 text-bold">ยอดพอดี</span></td>     
-                                                    <td>
-                                                        <a href="excel-in-description.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
-                                                            รายละเอียด
-                                                        </a> 
-                                                    </td>
-                                                </tr>  
-                                                
+                                                    <td>อดิศร</td>
+                                                    <td>ศรีสุธรรม </td> 
+                                                    <td>6248590</td>
+                                                    <td>10/01/2565 </td>
+                                                    <td>45000</td>
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td>วิทยาศาสตร์</td>
+                                                </tr>
                                                 <tr> 
                                                     <td>3</td>
-                                                    <td>EXCEL-65083992</td>
-                                                    <td>
-                                                        SLF-65-05-02.excel
-                                                    </td> 
-                                                    <td> 
-                                                        RSU-SLF-65-05-02.excel
-                                                    </td>
-                                                    <td>
-                                                        10/01/2565
-                                                    </td>
-                                                    <td>นายอดิศร ศรีสุธรรม</td>
-                                                    <td><span class="text-dark h5 text-bold">ยอดพอดี</span></td>     
-                                                    <td>
-                                                        <a href="excel-in-description.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
-                                                            รายละเอียด
-                                                        </a> 
-                                                    </td>
-                                                </tr>                                               
+                                                    <td>อดิศร</td>
+                                                    <td>ศรีสุธรรม </td> 
+                                                    <td>6248590</td>
+                                                    <td>10/01/2565 </td>
+                                                    <td>45000</td>
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td>วิทยาศาสตร์</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td>4</td>
+                                                    <td>อดิศร</td>
+                                                    <td>ศรีสุธรรม </td> 
+                                                    <td>6248590</td>
+                                                    <td>10/01/2565 </td>
+                                                    <td>45000</td>
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td>วิทยาศาสตร์</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td>5</td>
+                                                    <td>อดิศร</td>
+                                                    <td>ศรีสุธรรม </td> 
+                                                    <td>6248590</td>
+                                                    <td>10/01/2565 </td>
+                                                    <td>45000</td>
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td>วิทยาศาสตร์</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td>6</td>
+                                                    <td>อดิศร</td>
+                                                    <td>ศรีสุธรรม </td> 
+                                                    <td>6248590</td>
+                                                    <td>10/01/2565 </td>
+                                                    <td>45000</td>
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td>วิทยาศาสตร์</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td>7</td>
+                                                    <td>อดิศร</td>
+                                                    <td>ศรีสุธรรม </td> 
+                                                    <td>6248590</td>
+                                                    <td>10/01/2565 </td>
+                                                    <td>45000</td>
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td>วิทยาศาสตร์</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td>8</td>
+                                                    <td>อดิศร</td>
+                                                    <td>ศรีสุธรรม </td> 
+                                                    <td>6248590</td>
+                                                    <td>10/01/2565 </td>
+                                                    <td>45000</td>
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td></td>     
+                                                    <td>วิทยาศาสตร์</td>
+                                                </tr>
+                                                                                             
                                             </tbody> 
                                         </table>
                                     </div>

@@ -160,9 +160,17 @@
                 <div class="content-header">
                     <div class="container-fluid">
                         <div class="row mb-2">
-                            <div class="col-sm-6">
-                                <h1 class="m-0">รายการนำเข้า Excel</h1>
+                            <div class="col-12">
+                                <h1 class="m-0">ID : <span class="text-success">EXCEL-65083992</span></h1>
+                                <h4>เจ้าหน้าที่นำเข้า : อดิศร ศรีสุธรรม <span class="pl-3">วันที่นำเข้า : 10/03/2565</span></h4>
                             </div>  
+                            <div class="col-12">
+                                <ol class="h5">
+                                    <li>ยอดเงินพอดี </li>
+                                    <li>ตัวเลขสีเขียวคือเงินเกิน เรียกนักศึกษามารับเงินคืน </li>
+                                    <li>เรียกเข้ามาจ่ายเงินเพิ่มเดิมต้องตั้งหนี้ เองระบบจะทำการตั้งค่าให้เลยไม่ต้องมาสร้างแบบฟอร์มตั้งหนี้เอง</li>
+                                </ol>
+                            </div>
                         </div> 
                     </div> 
                 </div>  
@@ -181,118 +189,117 @@
                                     <a class="nav-link" href="#tab3" role="tab" data-toggle="tab">รายการที่ยกเลิก</a>
                                 </li>
                             </ul>  -->
-            
+                            
+                            
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade show active" id="tab1">
 
-                                    <div class="col-12 search-label">
+                                    <!-- <div class="col-12 search-label">
                                         <div class="row">
                                             <div class="col-xl-2">
-                                                <label for="">วันที่นำเข้า </label>
-                                                <input type="text" class="form-control"  >
-                                            </div>  
+                                                <label for="">ปีการศีกษา </label>
+                                                <select class="selectpicker" title="สาขา" data-show-subtext="true" data-live-search="true" name="year"  id="year">  
+                                                    <option>2564</option>
+                                                    <option>2563</option>
+                                                    <option>2562</option>
+                                                    <option>2561</option>
+                                                    <option>2560</option>
+                                                </select>
+                                            </div> 
+
                                             <div class="col-xl-2">
-                                                <label for="">สถานะในรายการ </label>
-                                                <select class="selectpicker" title="สถานะในรายการ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>มียอดเกิน</option>
-                                                    <option>ยอดพอดี</option> 
+                                                <label for="">คณะ </label>
+                                                <select class="selectpicker" title="เลือกคณะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>รัฐศาสตร์</option>
+                                                    <option>นิติศาสตร์</option>
+                                                    <option>บริหารธุรกิจ</option>
+                                                    <option>วิทยาลัยดนตรี</option>
+                                                    <option>สถาปัตยกรรมศาสตร์</option>
                                                 </select>
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">ชื่อไฟล์ </label>
+                                                <label for="">สาขา </label>
+                                                <select class="selectpicker" title="สาขา" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>เคมีประยุกต์</option>
+                                                    <option>วิชาวิทยาศาสตร์ชีวการแพทย์</option>
+                                                    <option>วิทยาการคอมพิวเตอร์และสารสนเทศ</option>
+                                                    <option>วิชาสัตววิทยา</option>
+                                                    <option>วิทยาศาสตร์ทางภายถ่าย  </option>
+                                                </select>
+                                            </div> 
+                                            <div class="col-xl-2">
+                                                <label for="">ชื่ออาจารย์ที่ปรึกษา </label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">เจ้าหน้าที่นำเข้า </label>
+                                                <label for="">ชื่อ-นามสกุล นักศึกษา </label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2"> 
                                                 <label class="col-12">&nbsp; </label>
-                                                <button href="#" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                <button href="form-student-group.html" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหากลุ่ม
                                                 </button> 
                                             </div> 
                                         </div>
-                                    </div>
+                                    </div> -->
 
-                                    <br>
+                                    <!-- <button class="btn btn-success">แจ้งนักศึกษามารับเงิน</button>
+                                    <button class="btn btn-success">แจ้งนักศึกษามารับเงิน</button>
+                                    <br> <br> -->
 
                                     <div class="col-12 table-responsive">
                                         <table id="tb-job" class="table table-striped  " style="width:100%">
                                             <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>ID</th>
-                                                    <th>ไฟล์จาก กยศ</th> 
-                                                    <th>ไฟล์จาก สำนักงานการเงิน</th>
-                                                    <th>วันที่นำเข้า</th>
-                                                    <th>เจ้าหน้าที่นำเข้า</th> 
-                                                    <th>สถานะในรายการ</th> 
+                                                <tr> 
+                                                    <th>ชื่อผู้กู้</th>
+                                                    <th>นามสกุล</th>
+                                                    <th class="text-center">ยอดจาก ก.ย.ศ.</th>
+                                                    <th class="text-center">ยอดจาก สำนักงานการเงิน</th>
+                                                    <th>สถานะ</th> 
                                                     <th>&nbsp;</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr> 
-                                                    <td>1</td>
-                                                    <td>EXCEL-65083992</td>
-                                                    <td>
-                                                        SLF-65-05-02.excel
-                                                    </td> 
-                                                    <td> 
-                                                        RSU-SLF-65-05-02.excel
-                                                    </td>
-                                                    <td>
-                                                        10/01/2565
-                                                    </td>
-                                                    <td>นายอดิศร ศรีสุธรรม</td>
-                                                    <td><span class="text-success h5 text-bold">มียอดเกิน</span></td>     
-                                                    <td>
-                                                        <a href="excel-in-description.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
-                                                            รายละเอียด
-                                                        </a> 
-                                                    </td>
+                                                <tr>  
+                                                    <td>อดิศร</td> 
+                                                    <td>ศรีสุธรรม</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td><span class="text-success">เงินเกิน</span></td> 
+                                                    <td></td> 
+                                                </tr>     
+                                                <tr>  
+                                                    <td>อดิศร</td> 
+                                                    <td>ศรีสุธรรม</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td>ปกติ</td> 
+                                                    <td></td> 
                                                 </tr>  
-                                                
-                                                <tr> 
-                                                    <td>2</td>
-                                                    <td>EXCEL-65083992</td>
-                                                    <td>
-                                                        SLF-65-05-02.excel
-                                                    </td> 
-                                                    <td> 
-                                                        RSU-SLF-65-05-02.excel
-                                                    </td>
-                                                    <td>
-                                                        10/01/2565
-                                                    </td>
-                                                    <td>นายอดิศร ศรีสุธรรม</td>
-                                                    <td><span class="text-dark h5 text-bold">ยอดพอดี</span></td>     
-                                                    <td>
-                                                        <a href="excel-in-description.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
-                                                            รายละเอียด
-                                                        </a> 
-                                                    </td>
+                                                <tr>  
+                                                    <td>อดิศร</td> 
+                                                    <td>ศรีสุธรรม</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td>ปกติ</td> 
+                                                    <td></td> 
                                                 </tr>  
-                                                
-                                                <tr> 
-                                                    <td>3</td>
-                                                    <td>EXCEL-65083992</td>
-                                                    <td>
-                                                        SLF-65-05-02.excel
-                                                    </td> 
-                                                    <td> 
-                                                        RSU-SLF-65-05-02.excel
-                                                    </td>
-                                                    <td>
-                                                        10/01/2565
-                                                    </td>
-                                                    <td>นายอดิศร ศรีสุธรรม</td>
-                                                    <td><span class="text-dark h5 text-bold">ยอดพอดี</span></td>     
-                                                    <td>
-                                                        <a href="excel-in-description.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
-                                                            รายละเอียด
-                                                        </a> 
-                                                    </td>
-                                                </tr>                                               
+                                                <tr>  
+                                                    <td>อดิศร</td> 
+                                                    <td>ศรีสุธรรม</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td>ปกติ</td> 
+                                                    <td></td> 
+                                                </tr>  
+                                                <tr>  
+                                                    <td>อดิศร</td> 
+                                                    <td>ศรีสุธรรม</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td align="center">4,500</td> 
+                                                    <td>ปกติ</td> 
+                                                    <td></td> 
+                                                </tr>                                            
                                             </tbody> 
                                         </table>
                                     </div>
